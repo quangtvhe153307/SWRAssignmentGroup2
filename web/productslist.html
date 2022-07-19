@@ -1,0 +1,667 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products List</title>
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleproductlist.css">
+        <link rel="stylesheet" href="css/stylefooter.css">
+
+        <!--font-awesome-->
+        <script src="https://kit.fontawesome.com/3c84cb624f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body onload="autoCollapse()">
+        <div class="header">
+            <!-- navbar -->
+            
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="productslist.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogs_list.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback">Feedbacks</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link" href="#divOne" class="first-button">Login</a>
+                    </li>
+                
+                
+
+                <li class="nav-item align-items-center">
+                    <a href="cartdetail.html" class="btn btn-outline-primary position-relative"><i class="fa-solid fa-cart-shopping me-1"></i>My Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                <!-- end navbar -->
+            </div>
+            <div class="page-product-breadcrumb container-lg flex" style="margin-bottom: 10px;">
+            
+                
+        </div>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-3">
+                    
+
+
+
+
+<link href="css/stylesider.css" rel="stylesheet"/>
+<div id="sider" class="h-100 bg-white p-3 rounded shadow-sm">
+    
+    <form method="post" action="productslist" id="productSearchForm">
+        <div class="search-container mb-3">
+            <input id="productSeachKey" class="form-control" type="text" placeholder="Search Product" aria-label="default input example" name="key" id="productSeachKey" value="">
+        </div>
+        <div class="categories-list-container">
+            <div class="text-center">
+                <h5 class="mb-0 font-weight-bold">Categories</h5>
+            </div>
+            <div class="form-check sider-form-check">
+                
+                
+
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productdetails.html" class="category-title">Laptop</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse0" role="button" aria-expanded="false" aria-controls="multiCollapse0" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse0">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Laptop Gaming</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">UltraBook</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productdetails.html" class="category-title">PC</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse1">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">All In One</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Workstation</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Gaming </a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productslist?categoryId=3" class="category-title">SmartPhone</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse2">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Phone</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productdetails.html" class="category-title">Tablet</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse3" role="button" aria-expanded="false" aria-controls="multiCollapse3" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse3">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Tablet</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productdetails.html" class="category-title">Accessory</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse4" role="button" aria-expanded="false" aria-controls="multiCollapse4" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse4">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">HeadPhone</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">EarPhone</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Mouse</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productdetails.html">Keyboard</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="hidden-input">
+            <input type="hidden" value="1" name="page" id="page"/>
+            <input type="hidden" value="newest" name="orderOption" id="order-option"/>
+            
+            
+            </div>
+            <div class="submit-button mb-3">
+                <!--<button class="btn btn-light w-100" type="subbmit">Search</button>-->
+            </div>
+        </form>
+        <div class="lastest-product-container row mb-3">
+            <div class="p-2 text-center">
+                <h5 class="mb-0 font-weight-bold">Latest Product</h5>
+            </div>
+            <div class="flex flex-column lastest-product">
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="productdetails.html" data-bs-toggle="tooltip" title="JLab GO Air POP">
+                            <img src="images/product_images/bluetooth-true-wireless-jlab-go-air-pop-2-2.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            JLab GO Air POP
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND500,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="productdetails.html" data-bs-toggle="tooltip" title="Mozard K8">
+                            <img src="images/product_images/bluetooth-mozard-k8-hong-1-org.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            Mozard K8
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND360,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="productdetails.html" data-bs-toggle="tooltip" title="Kanen K6">
+                            <img src="images/product_images/tai-nghe-bluetooth-kanen-k6-den-2-org.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            Kanen K6
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND480,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="productdetails.html" data-bs-toggle="tooltip" title="AirPods Pro MagSafe Charge Apple Trắng ">
+                            <img src="images/product_images/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120617.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            AirPods Pro MagSafe Charge Apple Trắng 
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND5,900,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="productdetails.html" data-bs-toggle="tooltip" title="V500SE Rainbow Blue Switch">
+                            <img src="images/product_images/ban-phim-co-rapoo-v500se-rainbow.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            V500SE Rainbow Blue Switch
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND590,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="productdetails.html" data-bs-toggle="tooltip" title="Dareu EK807G TKL">
+                            <img src="images/product_images/ban-phim-co-khong-day-dareu-ek807g-4.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            Dareu EK807G TKL
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND770,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+
+        </div>
+    </div>
+    <div class="static-contact-container col-12 d-flex justify-content-center flex-column" style="text-align: center;">
+        <span class="bg-white rounded-pill py-1 px-2"><span style="font-weight: bold;">Contact:</span> +0123456789</span>
+        <div>
+            <!--<span>Contact link:</span>-->
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+<script>
+    function changeState(item) {
+        if (item.innerHTML === "+") {
+            item.innerHTML = "-";
+        } else {
+            item.innerHTML = "+";
+        }
+    }
+</script>
+
+                    </div>
+                    <!--product list-->
+                    <div class="col-9">
+                        <div class="p-3 bg-white rounded shadow-sm">
+                        
+                            <div class="p-2 bg-light rounded d-flex justify-content-between">
+                                <div class="input-group w-25">
+                                    <span class="input-group-text" id="basic-addon1">Sort by</span>
+                                    <select class="form-control" name="orderOption" id="order-by" onchange="searchProductByChangeOrderOption()"  aria-describedby="basic-addon1">
+                                        <option value="newest" /> Newest 
+                                        <option value="oldest" /> Oldest 
+                                        <option value="lowestPrice" /> Lowest Price 
+                                        <option value="highestPrice" /> Highest Price 
+                                    </select>
+                                </div>
+                                <!--pagination-->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination" style="margin-bottom: 0;">
+                                        <li class="page-item"><button class="page-link" disabled onclick="nextProductPage(0);"><i class="fa-solid fa-less-than"></i></button></li>
+                                        <li class="page-item"><a class="page-link" href="#">1 / 3</a></li>
+                                        <li class="page-item"><button class="page-link"  onclick="nextProductPage(2);"><i class="fa-solid fa-greater-than"></i></button></li>
+                                        </ul>
+                                    </nav>
+                                    <!--end pagination-->
+                                </div>
+                                <!--product list-->
+                                <div class="row product-list-container">
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120617.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="AirPods Pro MagSafe Charge Apple Trắng ">
+                                                    <h6 class="card-title product-title font-weight-bold">AirPods Pro MagSafe Charge Apple Trắng </h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND6,800,000.00</span> <span style="color: red;"> VND5,900,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="21" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=21" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/tai-nghe-bluetooth-kanen-k6-den-2-org.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="Kanen K6">
+                                                    <h6 class="card-title product-title font-weight-bold">Kanen K6</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND600,000.00</span> <span style="color: red;"> VND480,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="22" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=22" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/bluetooth-mozard-k8-hong-1-org.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="Mozard K8">
+                                                    <h6 class="card-title product-title font-weight-bold">Mozard K8</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND450,000.00</span> <span style="color: red;"> VND360,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="23" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=23" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/bluetooth-true-wireless-jlab-go-air-pop-2-2.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="JLab GO Air POP">
+                                                    <h6 class="card-title product-title font-weight-bold">JLab GO Air POP</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND690,000.00</span> <span style="color: red;"> VND500,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="24" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=24" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/k380-multi-device-bluetooth-keyboard_2_.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="Logitech K380">
+                                                    <h6 class="card-title product-title font-weight-bold">Logitech K380</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND344,000.00</span> <span style="color: red;"> VND344,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="11" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=11" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/smartekvn-ban-phim-dareu-ek87-pink-white-1.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="Dareu EK87 TKL">
+                                                    <h6 class="card-title product-title font-weight-bold">Dareu EK87 TKL</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND344,000.00</span> <span style="color: red;"> VND344,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="12" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=12" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/ban-phim-apple-magic-keyboard-2021-1.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="Apple Magic Keyboard 2021">
+                                                    <h6 class="card-title product-title font-weight-bold">Apple Magic Keyboard 2021</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND330,000.00</span> <span style="color: red;"> VND290,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="13" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=13" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3 product-container">
+                                        <div class="card" onmouseover="displayProductAction(this);" onmouseout="HideProductAction(this);">
+                                            
+
+                                            <a href="productdetails.html" class="product-thumbnail"><img src="images/product_images/_0002_z1999964419602_21e9b7c37f5bdc5db.jpg" class="card-img-top" alt="..." id="product-thumbnail" onmouseover="zoomIn(this);" onmouseout="zoomOut(this);"></a>
+                                            <div class="card-body">
+                                                <a href="productdetails.html" data-bs-toggle="tooltip" title="Rappo V500 Pro">
+                                                    <h6 class="card-title product-title font-weight-bold">Rappo V500 Pro</h6>
+                                                </a>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    <span class="text-decoration-line-through">VND679,000.00</span> <span style="color: red;"> VND555,000.00</span>
+                                                    
+                                                    </h6>
+                                                    <p class="card-text"></p>
+                                            </div>
+                                            <div class="buy-form-container">
+                                                <form action="buy" method="post">
+                                                    <input type="text" name="id" value="14" hidden="true">
+                                                    <input type="number" name="quantity" value="1" hidden="true">
+                                                    <button type="submit" class="btn buy-product-button" >Buy</button>
+                                                    <a href="feedback?id=14" class="btn feedback-product-button">Feedback</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <!--end product list-->
+                        
+                        
+                    </div>
+                </div>
+                <!--end product list-->
+            </div>
+        </div>
+        <!--footer-->
+        
+<div id="footer" class="bg-white mt-5">
+    <div class="container-lg p-3">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="footer-title">About us</h3>
+                Death is like the wind, always by my side!
+                <ul class="footer-links list-unstyled">
+                    <li><a class="text-muted" target="_blank" href="https://www.google.com/maps/place/Khu+C%C3%B4ng+Ngh%E1%BB%87+Cao+H%C3%B2a+L%E1%BA%A1c,+Th%E1%BA%A1ch+Th%E1%BA%A5t,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam">
+                            <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Khu Công nghệ cao Hòa Lạc, Km29, Đại lộ Thăng Long, H. Thạch Thất, Tp. Hà Nội
+                        </a>
+                    </li>
+                    <li><a class="text-muted" href=""><i class="fa-solid fa-phone" style="margin-right: 5px;"></i> +0123456789</a></li>
+                    <li><a class="text-muted" href=""><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i> SE1611-NET - Group 2</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="footer-title">Information</h3>
+                <ul class="footer-links list-unstyled">
+                    <li><a class="text-muted" href="#">About us</a></li>
+                    <li><a class="text-muted" href="#">Contact us</a></li>
+                    <li><a class="text-muted" href="#">Privacy Policy</a></li>
+                    <li><a class="text-muted" href="#">Orders and Returns</a></li>
+                    <li><a class="text-muted" href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="footer-title">Service</h3>
+                <ul class="footer-links list-unstyled">
+                    <li><a class="text-muted" href="#">My Account</a></li>
+                    <li><a class="text-muted" href="#">Contact us<a/></li>
+                <li><a class="text-muted" href="#">View Cart</a></li>
+                    <li><a class="text-muted" href="#">Track My Order</a></li>
+                    <li><a class="text-muted" href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--end footer-->
+    </body>
+    <script src="js/productssearchfunction.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script>
+                                                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                                                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script src="js/productanimation.js"></script>
+</html>

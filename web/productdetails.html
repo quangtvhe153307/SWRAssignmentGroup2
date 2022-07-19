@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <!--font-awesome-->
+        <script src="https://kit.fontawesome.com/3c84cb624f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <!-- navbar -->
+            
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="productslist">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogslist">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback">Feedbacks</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link" href="#divOne" class="first-button">Login</a>
+                    </li>
+                
+                
+
+                <li class="nav-item align-items-center">
+                    <a href="cartdetail.html" class="btn btn-outline-primary position-relative"><i class="fa-solid fa-cart-shopping me-1"></i>My Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+                <!-- end navbar -->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                            <!-- sider -->
+                        
+
+
+
+
+<link href="css/stylesider.css" rel="stylesheet"/>
+<div id="sider" class="h-100 bg-white p-3 rounded shadow-sm">
+    
+    <form method="post" action="productslist" id="productSearchForm">
+        <div class="search-container mb-3">
+            <input id="productSeachKey" class="form-control" type="text" placeholder="Search Product" aria-label="default input example" name="key" id="productSeachKey" value="">
+        </div>
+        <div class="categories-list-container">
+            <div class="text-center">
+                <h5 class="mb-0 font-weight-bold">Categories</h5>
+            </div>
+            <div class="form-check sider-form-check">
+                
+                
+
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productslist?categoryId=1" class="category-title">Laptop</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse0" role="button" aria-expanded="false" aria-controls="multiCollapse0" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse0">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=3">Laptop Gaming</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=4">UltraBook</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productslist?categoryId=2" class="category-title">PC</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse1">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=5">All In One</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=6">Workstation</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=7">Gaming </a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productslist?categoryId=3" class="category-title">SmartPhone</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse2">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=8">Phone</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productslist?categoryId=4" class="category-title">Tablet</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse3" role="button" aria-expanded="false" aria-controls="multiCollapse3" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse3">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=9">Tablet</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="category-panel">
+                        <p class="category-container"> 
+                            <a href="productslist?categoryId=5" class="category-title">Accessory</a>
+                            <a class="btn collapse-btn" data-bs-toggle="collapse" href="#multiCollapse4" role="button" aria-expanded="false" aria-controls="multiCollapse4" onclick="changeState(this);" >+</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapse4">
+                                    <ul class="sub-category-list">
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=10">HeadPhone</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=11">EarPhone</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=12">Mouse</a>
+
+                                            </li>
+                                        
+                                            <li class="sub-category-item" >
+                                                <a href="productslist?subCategoryId=13">Keyboard</a>
+
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="hidden-input">
+            <input type="hidden" value="1" name="page" id="page"/>
+            <input type="hidden" value="newest" name="orderOption" id="order-option"/>
+            
+            
+            </div>
+            <div class="submit-button mb-3">
+                <!--<button class="btn btn-light w-100" type="subbmit">Search</button>-->
+            </div>
+        </form>
+        <div class="lastest-product-container row mb-3">
+            <div class="p-2 text-center">
+                <h5 class="mb-0 font-weight-bold">Latest Product</h5>
+            </div>
+            <div class="flex flex-column lastest-product">
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="product?id=24" data-bs-toggle="tooltip" title="JLab GO Air POP">
+                            <img src="images/product_images/bluetooth-true-wireless-jlab-go-air-pop-2-2.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            JLab GO Air POP
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND500,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="product?id=23" data-bs-toggle="tooltip" title="Mozard K8">
+                            <img src="images/product_images/bluetooth-mozard-k8-hong-1-org.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            Mozard K8
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND360,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="product?id=22" data-bs-toggle="tooltip" title="Kanen K6">
+                            <img src="images/product_images/tai-nghe-bluetooth-kanen-k6-den-2-org.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            Kanen K6
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND480,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="product?id=21" data-bs-toggle="tooltip" title="AirPods Pro MagSafe Charge Apple Trắng ">
+                            <img src="images/product_images/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120617.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            AirPods Pro MagSafe Charge Apple Trắng 
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND5,900,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="product?id=20" data-bs-toggle="tooltip" title="V500SE Rainbow Blue Switch">
+                            <img src="images/product_images/ban-phim-co-rapoo-v500se-rainbow.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            V500SE Rainbow Blue Switch
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND590,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+                <div class="flex latest-product-items">
+                    <div class="latest-product-img-panel">
+                        <a href="product?id=19" data-bs-toggle="tooltip" title="Dareu EK807G TKL">
+                            <img src="images/product_images/ban-phim-co-khong-day-dareu-ek807g-4.jpg" class="card-img-top latest-product-img" alt="des">
+                        </a>
+                    </div>
+                    <div class="latest-product-infor flex flex-column">
+                        <div class="latest-product-name">
+                            Dareu EK807G TKL
+                        </div>
+                        <div class="latest-product-price">
+                            <span style="color: red;">VND770,000</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+            
+
+        </div>
+    </div>
+    <div class="static-contact-container col-12 d-flex justify-content-center flex-column" style="text-align: center;">
+        <span class="bg-white rounded-pill py-1 px-2"><span style="font-weight: bold;">Contact:</span> +0123456789</span>
+        <div>
+            <!--<span>Contact link:</span>-->
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+<script>
+    function changeState(item) {
+        if (item.innerHTML === "+") {
+            item.innerHTML = "-";
+        } else {
+            item.innerHTML = "+";
+        }
+    }
+</script>
+
+                            <!-- end sider -->
+                    </div>
+                    <div class="col-9">
+                        <div class="p-3 bg-white rounded shadow-sm">
+                        
+                            <div class="row product-details-container mb-3">
+                                <div class="col-6">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                                        <div class="carousel-indicators">
+                                        
+                                        
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                                            
+                                        
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+                                            
+                                        
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
+                                            
+                                        
+                                    </div>
+                                    <div class="carousel-inner rounded">
+                                        
+                                            <div class="carousel-item">
+                                                <img src="images/product_images/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120617.jpg" class="d-block w-100" alt="des">
+                                            </div>
+                                        
+                                            <div class="carousel-item">
+                                                <img src="images/product_images/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-231021-120615.jpg" class="d-block w-100" alt="des">
+                                            </div>
+                                        
+                                            <div class="carousel-item">
+                                                <img src="images/product_images/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-1.jpg" class="d-block w-100" alt="des">
+                                            </div>
+                                        
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">AirPods Pro MagSafe Charge Apple Trắng   (MLWK3)</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Category: 
+                                            <a href="productlist?category=2">PC</a>
+                                            <span> ,</span>
+                                            <a href="productlist?category=7">Gaming </a>
+                                        </h6>
+                                        <div class="mb-2 ms-3">
+                                            
+                                                <span class="text-decoration-line-through">đ6,800,000</span>
+                                                <h4 style="color: red;"> đ5,900,000</h4>
+                                            
+                                            
+                                            </div>
+                                            <form action="buy" method="post">
+                                                <input type="text" name="id" value="21" hidden="true">
+                                            <div class="input-group">
+                                                <label class="input-group-text" for="typeNumber">Quantity</label>
+                                                
+                                                
+                                                    <input type="number" id="typeNumber" name="quantity" class="form-control" value="1" min="1" max="94" />
+                                                
+                                            </div>
+                                            <input  class="btn btn-outline-primary mt-3" type="submit" value="Add to Cart">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion">
+                                <div class="card">
+                                    <a class="text-muted text-uppercase" data-bs-toggle="collapse" href="#collapseOne">
+                                        <h5 class="mt-2 text-center">Overview</h5>
+                                    </a>
+                                    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                                        <hr class="mt-0">
+                                        <div class="card-body">
+                                        Đặc điểm nổi bật
+
+Vẻ ngoài thời trang, kiểu dáng nhỏ gọn, đeo chắc chắn với 3 size nút tai. 
+Tái tạo âm thanh sống động, phù hợp với ống tai bạn nhờ chip H1, công nghệ Adaptive EQ.
+Kiểm soát âm thanh tai nghe hiệu quả với công nghệ chống ồn chủ động (Active Noise Cancellation) cùng xuyên âm (Transparency mode).
+Nghe nhạc đến 4.5 giờ khi bật chống ồn, 5 giờ khi tắt chống ồn.
+Sử dụng song song với hộp sạc có thể dùng được đến 24 giờ nghe nhạc.
+Hỗ trợ sạc nhanh trong 5 phút có 1 giờ sử dụng. 
+Sạc không dây tiện lợi với bộ sạc Magsafe, chuẩn không dây Qi. 
+An tâm khi gặp mưa nhỏ, luyện tập ra nhiều mồ hôi với chuẩn chống nước IPX4.
+Sản phẩm chính hãng Apple, nguyên seal 100%. <br/>
+Lưu ý: Thanh toán trước khi mở seal.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <a class="text-muted text-uppercase" data-bs-toggle="collapse" href="#collapseTwo">
+                                    <h5 class="mt-2 text-center">Specifications</h5>
+                                </a>
+                                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                                    <hr class="mt-0">
+                                    <div class="card-body product-specification">
+                                        <table class="table table-striped">
+    <tbody>
+        <tr>
+            <td>Pin</td>
+            <td>Dùng 5 giờ - Sạc 2 giờ</td>
+        </tr>
+        <tr>
+            <td>Cổng sạc</td>
+            <td>Lightning, Sạc không dây, Sạc MagSafe</td>
+        </tr>
+        <tr>
+            <td>Công nghệ âm thanh</td>
+            <td>Active Noise Cancellation, Adaptive EQ, Custom high-excursion Apple driver, High Dynamic Range, Spatial Audio, Transparency Mode</td>
+        </tr>
+        <tr>
+            <td>Tương Thích</td>
+            <td>Android, iOS (iPhone), iPadOS (iPad), MacOS (Macbook, iMac)</td>
+        </tr>
+        <tr>
+            <td>Tiện ích</td>
+            <td>Chống nước IPX4, Chống ồn, Có mic thoại</td>
+        </tr>
+        <tr>
+            <td>Hỗ trợ kết nối</td>
+            <td>Bluetooth 5.0</td>
+        </tr>
+        <tr>
+            <td>Điều khiển bằng</td>
+            <td>Cảm ứng chạm</td>
+        </tr>
+        <tr>
+            <td>Hãng</td>
+            <td>Apple</td>
+        </tr>
+    </tbody>
+</table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/carousel.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</html>
